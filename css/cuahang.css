@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Istok Web", sans-serif;
+}
+.w3-top, .w3-bottom {
+  position: fixed;
+  width: 100%;
+  z-index: 5 !important;
+}
+body {
+    background: #1b2838;
+}
+.content{
+    padding-top: 200px;
+    text-align: center;
+    font-size: 32px;
+    color:white ;
+}
+.game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  
+}
+.card {
+  position: relative;
+  margin: 0 30px;
+  width: 320px;
+  height: 480px;
+  background: #322d8f;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.card::before {
+  /* content: "STAEM"; */
+  position: absolute;
+  top: -50%;
+  width: 100%;
+  height: 100%;
+  background: #ffce00;
+  transform: skewY(345deg);
+  transition: 0.5s;
+}
+
+.card:hover::before {
+  top: -70%;
+  transform: skewY(390deg);
+}
+
+.card::after {
+  /* content: "STAEM"; */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-weight: 600;
+  font-size: 6em;
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.card .imgBox {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  
+  z-index: 1;
+}
+/*
+.card .imgBox img {
+    max-width: 100%;
+    
+    transition: .5s;
+}
+
+.card:hover .imgBox img {
+    max-width: 50%;
+      
+}
+*/
+.card .contentBox {
+  position: relative;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+}
+
+.card .contentBox h3 {
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.card .contentBox .price {
+  font-size: 24px;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.card .contentBox .buy,
+.card .contentBox .coming {
+  position: relative;
+  top: 100px;
+  opacity: 0;
+  padding: 10px 30px;
+  margin-top: -12px;
+  color: #000000;
+  text-decoration: none;
+  background: #ffce00;
+  border-radius: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+
+.card:hover .contentBox .buy,
+.card:hover .contentBox .coming {
+  top: 0;
+  opacity: 1;
+}
+
+.mouse {
+  height: 300px;
+  width: auto;
+}
+
+.buy,
+.coming {
+  cursor: pointer;
+}
+/*cart*/
+
+.cart {
+  border-radius: 10px;
+  margin: auto;
+  text-align: center;
+  padding-top: 30px;
+  color: white;
+  position: fixed;
+  height: 70vh;
+  width: 400px;
+  right: -15%;
+  top: 175px;
+  background-color:transparent;
+  border: 2px solid rgba(255,255,255,0.5);
+  backdrop-filter: blur(15px);
+  padding: 12px 20px;
+  overflow-y: scroll;
+  transition: all 0.3s ease;
+  z-index: 6;
+}
+
+.cart:hover {
+  border-radius: 10px;
+  margin: auto;
+  text-align: center;
+  padding-top: 30px;
+  color: white;
+  position: fixed;
+  height: 70vh;
+  width: 400px;
+  right: 0;
+  top: 175px;
+  background-color: transparent;
+  border: 2px solid rgba(255,255,255,0.5);
+  backdrop-filter: blur(15px);
+  padding: 12px 20px;
+  overflow-y: scroll;
+  transition: all 0.3s ease;
+  z-index: 6;
+}
+
+.cart h2 {
+  margin-bottom: 20px;
+}
+
+.cart table {
+  width: 100%;
+
+}
+
+.cart table thead tr th:first-child {
+  text-align: left;
+}
+
+.cart table thead tr th:last-child,
+.cart table tbody tr td:last-child {
+  text-align: right;
+}
+.cart table tr td {
+  /* border-bottom: 1px solid #ddd ; */
+  padding: 12px 0;
+}
+
+.cart .thanh-toan {
+  margin-top: 12px;
+  height: 30px;
+  padding: 0 12px;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.cart i {
+  right: 0;
+  width: 150px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+

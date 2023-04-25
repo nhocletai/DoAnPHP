@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Istok Web", sans-serif;
+}
+
+body {
+    background: #1b2838;
+}
+.block {
+    background-color: #1b2838 !important;
+    color: #1b2838;
+    margin-top: 200px;
+}
+h1 {
+    
+    text-align: center;
+    color: white;
+}
+/* Style for the table in dark theme */
+table {
+    margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    color: #f2f2f2; /* Text color */
+    background-color: #322d8f; /* Table background color */
+  }
+  
+  /* Style for table headers in dark theme */
+  th {
+    background-color: #322d8f; /* Header background color */
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #252174; /* Header border color */
+  }
+  
+  /* Style for table cells in dark theme */
+  td {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #252174; /* Cell border color */
+  }
+  
+  /* Style for table alternate rows in dark theme */
+  tr:nth-child(even) {
+    background-color: #252174; /* Alternate row background color */
+  }
+  
+  /* Style for table hover effect in dark theme */
+  tr:hover {
+    background-color: #1b1855; /* Hover row background color */
+  }
+  
+
+.cart-repair,
+.cart-delete {
+    cursor: pointer;
+}
+
+
+
+
+/* Reset các style mặc định của form */
+form {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.search-form {
+  text-align: right;
+}
+
+.label, .input, .button {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.label {
+  margin-right: 10px;
+  color: #fff; /* Change label text color to white */
+}
+
+.input {
+  padding: 5px;
+  background-color: #322d8f; /* Change input background color to dark gray */
+  color: #fff; /* Change input text color to white */
+  border: none;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+

@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+/* Apply dark theme to the body */
+body {
+  background-color: #1b2838;
+  color: #fff;
+}
+
+/* Apply styles to the form containers */
+
+.content_taikhoan, .thongtinnguoidung {
+  margin-top: 100px;
+  background-color: #333;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Apply styles to the form text */
+.text {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Apply styles to the form inputs */
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  background-color: #444;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+}
+
+.user-label {
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  pointer-events: none;
+  transition: 0.2s ease all;
+  color: #aaa;
+}
+
+/* Apply styles to the form button */
+button{
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

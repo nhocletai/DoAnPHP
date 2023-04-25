@@ -1,0 +1,74 @@
+/* CSS for the lucky wheel */
+.wheel-container {
+  position: relative;
+}
+
+.wheel {
+  width: 200px;
+  height: 200px;
+  background-color: #f6d365;
+  border-radius: 50%;
+  position: relative;
+  transition: transform 3s ease-in-out;
+}
+
+.segment {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.segment:nth-child(1) {
+  background-color: #ed6663;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.segment:nth-child(2) {
+  background-color: #ffa372;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  transform: rotate(60deg);
+}
+
+.segment:nth-child(3) {
+  background-color: #ffdb58;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  transform: rotate(120deg);
+}
+
+.segment:nth-child(4) {
+  background-color: #a1c45a;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  transform: rotate(180deg);
+}
+
+.segment:nth-child(5) {
+  background-color: #5c9f6c;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  transform: rotate(240deg);
+}
+
+.segment:nth-child(6) {
+  background-color: #547aa1;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  transform: rotate(300deg);
+}
+
+.spin-btn {
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

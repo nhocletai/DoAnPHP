@@ -1,0 +1,51 @@
+
+body {
+    background-color: #1b2838;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.content {
+    margin-top: 100px;
+    padding-bottom: 20px;
+}
+h1,h2,h3{
+    color:goldenrod;
+    font-size: 25px;
+}
+/* Style the paragraphs */
+p {
+    color: #ccc;
+    line-height: 1.5;
+    padding: 0 20px;
+}
+
+/* Style the unordered list */
+ul {
+    color: #ccc;
+    padding: 0 40px;
+}
+
+
+
+/* Style the bold text */
+b {
+    color: #fff;
+}
+
+/* Style the links */
+a {
+    color: #66ccff;
+}
+
+/* Style the links on hover */
+a:hover {
+    color: #99e6ff;
+}
+
+p img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}

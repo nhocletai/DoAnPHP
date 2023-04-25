@@ -1,0 +1,52 @@
+:root {
+    --cyan:cyan;
+}                          I
+*{    
+	margin:0; padding:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+header {
+	position: fixed;
+	top:0; left:0; right:0;
+	background: #1b2838;
+	padding: 12px 1%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 1000;
+	box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+
+}
+
+header .logo {
+	margin-top: -10px;
+	
+}
+
+
+header .navbar a {
+	font-size: 1.2rem;
+	padding: 0 1.5rem;
+	color: white;
+	text-decoration:none;
+}
+
+header .navbar a:hover {
+	color:(--cyan);
+}
+
+header .icons a{
+	font-size: 1.5rem;
+	color: white;
+	margin-left: 1.5rem;
+}
+
+header .icons a:hover{
+	color:(--cyan);
+}
